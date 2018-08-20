@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A216F3D212A9E35007C059E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A216F3C212A9E35007C059E /* LoginViewController.swift */; };
+		3A216F3F212A9E3E007C059E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A216F3E212A9E3E007C059E /* SignupViewController.swift */; };
 		3A31DA5B212A8B7B005E6040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31DA5A212A8B7B005E6040 /* AppDelegate.swift */; };
 		3A31DA5D212A8B7B005E6040 /* Contests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31DA5C212A8B7B005E6040 /* Contests.swift */; };
 		3A31DA5F212A8B7B005E6040 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31DA5E212A8B7B005E6040 /* SecondViewController.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		16C8E9F16297FFA587B397AE /* Pods-fanatic11.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fanatic11.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fanatic11/Pods-fanatic11.debug.xcconfig"; sourceTree = "<group>"; };
 		1AA74EE0E9DD875A19F8E101 /* Pods_fanatic11.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fanatic11.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A216F3C212A9E35007C059E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3A216F3E212A9E3E007C059E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		3A31DA57212A8B7B005E6040 /* fanatic11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fanatic11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A31DA5A212A8B7B005E6040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A31DA5C212A8B7B005E6040 /* Contests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contests.swift; sourceTree = "<group>"; };
@@ -46,6 +50,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A216F40212A9E4B007C059E /* Login Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A216F3C212A9E35007C059E /* LoginViewController.swift */,
+				3A216F3E212A9E3E007C059E /* SignupViewController.swift */,
+			);
+			path = "Login Files";
+			sourceTree = "<group>";
+		};
+		3A216F41212A9E88007C059E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A216F43212A9E9D007C059E /* Main Controller */,
+				3A216F42212A9E96007C059E /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A216F42212A9E96007C059E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3A31DA6F212A8BE2005E6040 /* LoginScreens.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3A216F43212A9E9D007C059E /* Main Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A31DA60212A8B7B005E6040 /* Main.storyboard */,
+			);
+			path = "Main Controller";
+			sourceTree = "<group>";
+		};
 		3A31DA4E212A8B7B005E6040 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +109,8 @@
 				3A31DA6E212A8BC3005E6040 /* System */,
 				3A31DA5C212A8B7B005E6040 /* Contests.swift */,
 				3A31DA5E212A8B7B005E6040 /* SecondViewController.swift */,
-				3A31DA60212A8B7B005E6040 /* Main.storyboard */,
-				3A31DA6F212A8BE2005E6040 /* LoginScreens.storyboard */,
+				3A216F40212A9E4B007C059E /* Login Files */,
+				3A216F41212A9E88007C059E /* Views */,
 				3A31DA63212A8B7D005E6040 /* Assets.xcassets */,
 				3A31DA65212A8B7D005E6040 /* LaunchScreen.storyboard */,
 				3A31DA68212A8B7D005E6040 /* Info.plist */,
@@ -225,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A216F3D212A9E35007C059E /* LoginViewController.swift in Sources */,
 				3A31DA5F212A8B7B005E6040 /* SecondViewController.swift in Sources */,
+				3A216F3F212A9E3E007C059E /* SignupViewController.swift in Sources */,
 				3A31DA5B212A8B7B005E6040 /* AppDelegate.swift in Sources */,
 				3A31DA5D212A8B7B005E6040 /* Contests.swift in Sources */,
 			);
@@ -375,7 +415,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S9MM62BW22;
 				INFOPLIST_FILE = fanatic11/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appgroceries.fanatic11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -391,7 +434,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S9MM62BW22;
 				INFOPLIST_FILE = fanatic11/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appgroceries.fanatic11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
