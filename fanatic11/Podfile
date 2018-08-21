@@ -10,5 +10,6 @@ target 'fanatic11' do
     pod 'SwiftyJSON'
     pod 'DTTextField'
     pod 'IQKeyboardManagerSwift'
+    pod 'AACarousel'
 
 end

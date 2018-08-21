@@ -1,10 +1,12 @@
 PODS:
+  - AACarousel (1.1.0)
   - Alamofire (4.7.3)
   - DTTextField (0.3.0)
   - IQKeyboardManagerSwift (6.1.1)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
+  - AACarousel
   - Alamofire
   - DTTextField
   - IQKeyboardManagerSwift
@@ -12,17 +14,19 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - AACarousel
     - Alamofire
     - DTTextField
     - IQKeyboardManagerSwift
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  AACarousel: 6131fa3650201a3ce10b6581621f3cade221b079
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   DTTextField: c26deead1a51c92156e2a638ac7d2c702c2f345e
   IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 85c4a5cbdda0f75773ba1d8bf50c59ae49adf839
+PODFILE CHECKSUM: f85f5792982256706382a84de7e1217e5cf25132
 
 COCOAPODS: 1.5.0
