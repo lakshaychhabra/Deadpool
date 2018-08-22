@@ -11,5 +11,6 @@ target 'fanatic11' do
     pod 'DTTextField'
     pod 'IQKeyboardManagerSwift'
     pod 'AACarousel'
+    pod 'Kingfisher'
 
 end
