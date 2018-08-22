@@ -17,6 +17,9 @@
 		3A31DA67212A8B7D005E6040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A31DA65212A8B7D005E6040 /* LaunchScreen.storyboard */; };
 		3A31DA70212A8BE2005E6040 /* LoginScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A31DA6F212A8BE2005E6040 /* LoginScreens.storyboard */; };
 		3A31DA72212A8BF7005E6040 /* DesignableX in Resources */ = {isa = PBXBuildFile; fileRef = 3A31DA71212A8BF7005E6040 /* DesignableX */; };
+		3A3DF8F5212D4E9800850A42 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DF8F4212D4E9800850A42 /* Home.storyboard */; };
+		3A3DF8F8212DC5C800850A42 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DF8F7212DC5C800850A42 /* Menu.storyboard */; };
+		3A3DF8FA212DC77C00850A42 /* MyAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DF8F9212DC77C00850A42 /* MyAccount.storyboard */; };
 		A005DAA05FDAEAC585742331 /* Pods_fanatic11.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA74EE0E9DD875A19F8E101 /* Pods_fanatic11.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		3A31DA68212A8B7D005E6040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A31DA6F212A8BE2005E6040 /* LoginScreens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreens.storyboard; sourceTree = "<group>"; };
 		3A31DA71212A8BF7005E6040 /* DesignableX */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DesignableX; sourceTree = "<group>"; };
+		3A3DF8F4212D4E9800850A42 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		3A3DF8F7212DC5C800850A42 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		3A3DF8F9212DC77C00850A42 /* MyAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyAccount.storyboard; sourceTree = "<group>"; };
 		9794796177324EC9698F0E2E /* Pods-fanatic11.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fanatic11.release.xcconfig"; path = "Pods/Target Support Files/Pods-fanatic11/Pods-fanatic11.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +85,10 @@
 		3A216F43212A9E9D007C059E /* Main Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3A3DF8F9212DC77C00850A42 /* MyAccount.storyboard */,
+				3A3DF8F7212DC5C800850A42 /* Menu.storyboard */,
 				3A31DA60212A8B7B005E6040 /* Main.storyboard */,
+				3A3DF8F4212D4E9800850A42 /* Home.storyboard */,
 			);
 			path = "Main Controller";
 			sourceTree = "<group>";
@@ -203,10 +212,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3DF8F8212DC5C800850A42 /* Menu.storyboard in Resources */,
 				3A31DA67212A8B7D005E6040 /* LaunchScreen.storyboard in Resources */,
 				3A31DA64212A8B7D005E6040 /* Assets.xcassets in Resources */,
 				3A31DA72212A8BF7005E6040 /* DesignableX in Resources */,
+				3A3DF8F5212D4E9800850A42 /* Home.storyboard in Resources */,
 				3A31DA70212A8BE2005E6040 /* LoginScreens.storyboard in Resources */,
+				3A3DF8FA212DC77C00850A42 /* MyAccount.storyboard in Resources */,
 				3A31DA62212A8B7B005E6040 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,7 +429,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S9MM62BW22;
 				INFOPLIST_FILE = fanatic11/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appgroceries.fanatic11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -433,7 +448,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S9MM62BW22;
 				INFOPLIST_FILE = fanatic11/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appgroceries.fanatic11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
