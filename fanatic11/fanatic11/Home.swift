@@ -20,6 +20,9 @@ class Home: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        tabBarController?.tabBar.isHidden = false
+//        navigationController?.navigationBar.barStyle = .black
+        
         let pathArray = ["https://media.licdn.com/dms/image/C4D03AQGwzM_QAS-inA/profile-displayphoto-shrink_200_200/0?e=1538611200&v=beta&t=PhoHU2GTpQ8HCs6ayDXCvbm9L98wLA1SdZXtp68hxQU", "https://qph.fs.quoracdn.net/main-thumb-104917081-200-doqbdioevfpljkwmrogaywtxzfykftjw.jpeg"]
         titleArray = [" ", " "]
         imageSlider.delegate = self

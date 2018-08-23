@@ -15,27 +15,18 @@ class AppStartsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-   
-            
             NetworkManager.isUnreachable { _ in
                 self.showOfflinePage()
-                
             }
         
             NetworkManager.isReachable { (_) in
                 DispatchQueue.main.async {
                 self.showLoginScreens()
                 }
-                
-            
-
         }
         
     }
     
-  
-    
- 
 }
 
 extension UIViewController{
@@ -49,11 +40,9 @@ extension UIViewController{
  
     func showMainController() -> Void {
         DispatchQueue.main.async {
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: "home") as! Home
-            let navController : UINavigationController = UINavigationController(rootViewController: newViewController)
-            self.present(navController, animated: true, completion: nil)
-            print("Showing Main Screen")
+
+            
+            self.performSegue(withIdentifier: "toMain", sender: nil)
         }
     }
     

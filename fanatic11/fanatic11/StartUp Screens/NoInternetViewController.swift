@@ -28,6 +28,7 @@ let network = NetworkManager.sharedInstance
         
         // Hide the navigation bar
         navigationController?.setNavigationBarHidden(true, animated: animated)
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -35,6 +36,8 @@ let network = NetworkManager.sharedInstance
         
         // Show the navigation bar
         navigationController?.setNavigationBarHidden(false, animated: animated)
+        navigationController?.navigationBar.barStyle = .black
+        self.tabBarController?.tabBar.isHidden = false
     }
     
 
@@ -46,6 +49,7 @@ let network = NetworkManager.sharedInstance
             self.showMainController()
         }
         NetworkManager.isReachable { (_) in
+            print("Hello going online")
             self.showMainController()
         }
     }

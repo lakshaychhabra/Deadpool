@@ -88,10 +88,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UdH-c8-wwS"/>
                     </view>
+                    <connections>
+                        <segue destination="fuc-7G-FdA" kind="show" identifier="toMain" id="vV4-8V-P2d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UQY-d8-HCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="876" y="152.47376311844079"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="c7s-1L-8Ds">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="fuc-7G-FdA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zg-13-gce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1503" y="148"/>
         </scene>
     </scenes>
     <resources>
