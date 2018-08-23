@@ -10,6 +10,10 @@
 		3A20D98E212EF5BD004F2AAF /* MyContests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A20D98D212EF5BD004F2AAF /* MyContests.storyboard */; };
 		3A20D990212EF66F004F2AAF /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A20D98F212EF66F004F2AAF /* Notifications.storyboard */; };
 		3A20D993212EF73B004F2AAF /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20D992212EF73B004F2AAF /* NotificationViewController.swift */; };
+		3A20D995212F01BA004F2AAF /* MyContestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20D994212F01B9004F2AAF /* MyContestViewController.swift */; };
+		3A20D997212F01CB004F2AAF /* SelectMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20D996212F01CB004F2AAF /* SelectMenuViewController.swift */; };
+		3A20D99A212F0989004F2AAF /* MenuCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20D998212F0989004F2AAF /* MenuCells.swift */; };
+		3A20D99B212F0989004F2AAF /* MenuCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A20D999212F0989004F2AAF /* MenuCells.xib */; };
 		3A216F3D212A9E35007C059E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A216F3C212A9E35007C059E /* LoginViewController.swift */; };
 		3A216F3F212A9E3E007C059E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A216F3E212A9E3E007C059E /* SignupViewController.swift */; };
 		3A31DA5B212A8B7B005E6040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31DA5A212A8B7B005E6040 /* AppDelegate.swift */; };
@@ -36,6 +40,10 @@
 		3A20D98D212EF5BD004F2AAF /* MyContests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyContests.storyboard; sourceTree = "<group>"; };
 		3A20D98F212EF66F004F2AAF /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		3A20D992212EF73B004F2AAF /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		3A20D994212F01B9004F2AAF /* MyContestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContestViewController.swift; sourceTree = "<group>"; };
+		3A20D996212F01CB004F2AAF /* SelectMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMenuViewController.swift; sourceTree = "<group>"; };
+		3A20D998212F0989004F2AAF /* MenuCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCells.swift; sourceTree = "<group>"; };
+		3A20D999212F0989004F2AAF /* MenuCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCells.xib; sourceTree = "<group>"; };
 		3A216F3C212A9E35007C059E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3A216F3E212A9E3E007C059E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		3A31DA57212A8B7B005E6040 /* fanatic11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fanatic11.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,9 +83,20 @@
 			children = (
 				3A31DA5C212A8B7B005E6040 /* Home.swift */,
 				3A3DF8FB212DCA7900850A42 /* MyAccount.swift */,
+				3A20D994212F01B9004F2AAF /* MyContestViewController.swift */,
+				3A20D996212F01CB004F2AAF /* SelectMenuViewController.swift */,
 				3A20D992212EF73B004F2AAF /* NotificationViewController.swift */,
 			);
 			path = "Main Controller";
+			sourceTree = "<group>";
+		};
+		3A20D99C212F0993004F2AAF /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				3A20D998212F0989004F2AAF /* MenuCells.swift */,
+				3A20D999212F0989004F2AAF /* MenuCells.xib */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 		3A216F40212A9E4B007C059E /* Login Files */ = {
@@ -94,7 +113,7 @@
 			children = (
 				3A216F43212A9E9D007C059E /* Main Controller */,
 				3A216F42212A9E96007C059E /* Login */,
-				3AE28A68212E6CE0006542DA /* AppStarts.storyboard */,
+				3A20D99C212F0993004F2AAF /* CustomCells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,6 +121,7 @@
 		3A216F42212A9E96007C059E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				3AE28A68212E6CE0006542DA /* AppStarts.storyboard */,
 				3A31DA6F212A8BE2005E6040 /* LoginScreens.storyboard */,
 			);
 			path = Login;
@@ -114,8 +134,8 @@
 				3A20D98D212EF5BD004F2AAF /* MyContests.storyboard */,
 				3A3DF8F9212DC77C00850A42 /* MyAccount.storyboard */,
 				3A3DF8F7212DC5C800850A42 /* Menu.storyboard */,
-				3A31DA60212A8B7B005E6040 /* Main.storyboard */,
 				3A20D98F212EF66F004F2AAF /* Notifications.storyboard */,
+				3A31DA60212A8B7B005E6040 /* Main.storyboard */,
 			);
 			path = "Main Controller";
 			sourceTree = "<group>";
@@ -267,6 +287,7 @@
 				3A31DA70212A8BE2005E6040 /* LoginScreens.storyboard in Resources */,
 				3AE28A69212E6CE0006542DA /* AppStarts.storyboard in Resources */,
 				3A3DF8FA212DC77C00850A42 /* MyAccount.storyboard in Resources */,
+				3A20D99B212F0989004F2AAF /* MenuCells.xib in Resources */,
 				3A31DA62212A8B7B005E6040 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +355,9 @@
 				3A216F3F212A9E3E007C059E /* SignupViewController.swift in Sources */,
 				3A31DA5B212A8B7B005E6040 /* AppDelegate.swift in Sources */,
 				3A31DA5D212A8B7B005E6040 /* Home.swift in Sources */,
+				3A20D997212F01CB004F2AAF /* SelectMenuViewController.swift in Sources */,
+				3A20D99A212F0989004F2AAF /* MenuCells.swift in Sources */,
+				3A20D995212F01BA004F2AAF /* MyContestViewController.swift in Sources */,
 				3A20D993212EF73B004F2AAF /* NotificationViewController.swift in Sources */,
 				3AE28A6B212E6D67006542DA /* AppStartsViewController.swift in Sources */,
 				3A60B41F212E78000002CCF7 /* NoInternetViewController.swift in Sources */,

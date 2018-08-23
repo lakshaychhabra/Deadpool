@@ -1,5 +1,5 @@
 //
-//  NotificationViewController.swift
+//  MyContestViewController.swift
 //  fanatic11
 //
 //  Created by Lakshay Chhabra on 23/08/18.
@@ -8,17 +8,19 @@
 
 import UIKit
 
-class NotificationViewController: UIViewController {
+class MyContestViewController: UIViewController {
 
+    @IBOutlet var contestSegment: UISegmentedControl!
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+
     }
+
 }
 
 //Mark :- Table controls
-extension NotificationViewController : UITableViewDelegate, UITableViewDataSource{
+extension MyContestViewController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1

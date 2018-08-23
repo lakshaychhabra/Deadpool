@@ -31,6 +31,12 @@ class AppStartsViewController: UIViewController {
 
 extension UIViewController{
     
+    func registerCellNib(named name: String, with tableView: UITableView)
+    {
+        let cellNib = UINib(nibName: name, bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: name)
+    }
+    
     func showLoginScreens() -> Void {
         let storyBoard: UIStoryboard = UIStoryboard(name: "LoginScreens", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "login") as! LoginViewController
@@ -54,5 +60,6 @@ extension UIViewController{
             self.present(newViewController, animated: true, completion: nil)
         }
     }
+    
     
 }

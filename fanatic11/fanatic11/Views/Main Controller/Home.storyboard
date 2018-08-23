@@ -31,6 +31,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="NDc-Ec-Rki"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="7bh-f8-JEm"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-1v-8OR" customClass="AACarousel" customModule="AACarousel">
                                 <rect key="frame" x="0.0" y="64" width="375" height="171"/>
@@ -45,6 +49,9 @@
                                     <segment title="Results"/>
                                 </segments>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="indexChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="EvF-YN-VSK"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,6 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" title="Fanatic Pro 11" id="ZhT-ej-Bax">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="xni-eu-dqw"/>
                         <barButtonItem key="rightBarButtonItem" image="icons8-bell-filled-30" id="Pwm-ph-7HK">
                             <color key="tintColor" red="0.99359533629999996" green="0.99359533629999996" blue="0.99359533629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -75,6 +83,7 @@
                     <connections>
                         <outlet property="imageSlider" destination="iQA-1v-8OR" id="Y5e-Wb-uQX"/>
                         <outlet property="notificationIcon" destination="Pwm-ph-7HK" id="zKa-ZW-um2"/>
+                        <outlet property="segmentControl" destination="cSb-GY-Jb5" id="uJ5-ct-PJY"/>
                         <outlet property="tableView" destination="0Dh-4B-ffc" id="jAf-Ti-eAY"/>
                     </connections>
                 </viewController>
