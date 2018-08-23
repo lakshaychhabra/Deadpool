@@ -20,6 +20,10 @@
 		3A3DF8F8212DC5C800850A42 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DF8F7212DC5C800850A42 /* Menu.storyboard */; };
 		3A3DF8FA212DC77C00850A42 /* MyAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DF8F9212DC77C00850A42 /* MyAccount.storyboard */; };
 		3A3DF8FC212DCA7900850A42 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DF8FB212DCA7900850A42 /* MyAccount.swift */; };
+		3A60B41F212E78000002CCF7 /* NoInternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A60B41E212E78000002CCF7 /* NoInternetViewController.swift */; };
+		3AE28A65212E6B56006542DA /* NetworkManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE28A64212E6B56006542DA /* NetworkManagement.swift */; };
+		3AE28A69212E6CE0006542DA /* AppStarts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE28A68212E6CE0006542DA /* AppStarts.storyboard */; };
+		3AE28A6B212E6D67006542DA /* AppStartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE28A6A212E6D67006542DA /* AppStartsViewController.swift */; };
 		A005DAA05FDAEAC585742331 /* Pods_fanatic11.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA74EE0E9DD875A19F8E101 /* Pods_fanatic11.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,10 @@
 		3A3DF8F7212DC5C800850A42 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		3A3DF8F9212DC77C00850A42 /* MyAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyAccount.storyboard; sourceTree = "<group>"; };
 		3A3DF8FB212DCA7900850A42 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
+		3A60B41E212E78000002CCF7 /* NoInternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetViewController.swift; sourceTree = "<group>"; };
+		3AE28A64212E6B56006542DA /* NetworkManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagement.swift; sourceTree = "<group>"; };
+		3AE28A68212E6CE0006542DA /* AppStarts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppStarts.storyboard; sourceTree = "<group>"; };
+		3AE28A6A212E6D67006542DA /* AppStartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStartsViewController.swift; sourceTree = "<group>"; };
 		9794796177324EC9698F0E2E /* Pods-fanatic11.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fanatic11.release.xcconfig"; path = "Pods/Target Support Files/Pods-fanatic11/Pods-fanatic11.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +78,7 @@
 			children = (
 				3A216F43212A9E9D007C059E /* Main Controller */,
 				3A216F42212A9E96007C059E /* Login */,
+				3AE28A68212E6CE0006542DA /* AppStarts.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,9 +124,11 @@
 			isa = PBXGroup;
 			children = (
 				3A31DA71212A8BF7005E6040 /* DesignableX */,
+				3AE28A6E212E753D006542DA /* Extensions */,
 				3A31DA6E212A8BC3005E6040 /* System */,
 				3A31DA5C212A8B7B005E6040 /* Home.swift */,
 				3A3DF8FB212DCA7900850A42 /* MyAccount.swift */,
+				3A60B420212E78090002CCF7 /* StartUp Screens */,
 				3A216F40212A9E4B007C059E /* Login Files */,
 				3A216F41212A9E88007C059E /* Views */,
 				3A31DA63212A8B7D005E6040 /* Assets.xcassets */,
@@ -131,8 +142,25 @@
 			isa = PBXGroup;
 			children = (
 				3A31DA5A212A8B7B005E6040 /* AppDelegate.swift */,
+				3AE28A64212E6B56006542DA /* NetworkManagement.swift */,
 			);
 			path = System;
+			sourceTree = "<group>";
+		};
+		3A60B420212E78090002CCF7 /* StartUp Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3AE28A6A212E6D67006542DA /* AppStartsViewController.swift */,
+				3A60B41E212E78000002CCF7 /* NoInternetViewController.swift */,
+			);
+			path = "StartUp Screens";
+			sourceTree = "<group>";
+		};
+		3AE28A6E212E753D006542DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3F3897EA92C872B063379317 /* Pods */ = {
@@ -218,6 +246,7 @@
 				3A31DA72212A8BF7005E6040 /* DesignableX in Resources */,
 				3A3DF8F5212D4E9800850A42 /* Home.storyboard in Resources */,
 				3A31DA70212A8BE2005E6040 /* LoginScreens.storyboard in Resources */,
+				3AE28A69212E6CE0006542DA /* AppStarts.storyboard in Resources */,
 				3A3DF8FA212DC77C00850A42 /* MyAccount.storyboard in Resources */,
 				3A31DA62212A8B7B005E6040 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +285,7 @@
 				"${BUILT_PRODUCTS_DIR}/DTTextField/DTTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -265,6 +295,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,9 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A216F3D212A9E35007C059E /* LoginViewController.swift in Sources */,
+				3AE28A65212E6B56006542DA /* NetworkManagement.swift in Sources */,
 				3A216F3F212A9E3E007C059E /* SignupViewController.swift in Sources */,
 				3A31DA5B212A8B7B005E6040 /* AppDelegate.swift in Sources */,
 				3A31DA5D212A8B7B005E6040 /* Home.swift in Sources */,
+				3AE28A6B212E6D67006542DA /* AppStartsViewController.swift in Sources */,
+				3A60B41F212E78000002CCF7 /* NoInternetViewController.swift in Sources */,
 				3A3DF8FC212DCA7900850A42 /* MyAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +465,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S9MM62BW22;
 				INFOPLIST_FILE = fanatic11/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appgroceries.fanatic11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -447,7 +484,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S9MM62BW22;
 				INFOPLIST_FILE = fanatic11/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appgroceries.fanatic11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

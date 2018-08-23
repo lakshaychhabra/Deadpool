@@ -12,5 +12,6 @@ target 'fanatic11' do
     pod 'IQKeyboardManagerSwift'
     pod 'AACarousel'
     pod 'Kingfisher'
+    pod 'ReachabilitySwift'
 
 end

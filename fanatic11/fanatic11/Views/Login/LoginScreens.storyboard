@@ -14,7 +14,7 @@
         <!--Login View Controller-->
         <scene sceneID="eSB-yy-uXk">
             <objects>
-                <viewController id="rr5-Nm-ciJ" customClass="LoginViewController" customModule="fanatic11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rr5-Nm-ciJ" customClass="LoginViewController" customModule="fanatic11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8Q-XP-H1L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v10-WR-RrN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="292" y="-232.53373313343329"/>
+            <point key="canvasLocation" x="-34" y="-225"/>
         </scene>
         <!--Main-->
         <scene sceneID="cmA-qc-kNP">

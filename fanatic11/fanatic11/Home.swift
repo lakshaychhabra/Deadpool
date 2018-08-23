@@ -41,8 +41,10 @@ class Home: UIViewController {
 
 extension Home : AACarouselDelegate{
     func didSelectCarouselView(_ view: AACarousel, _ index: Int) {
-        let alert = UIAlertView.init(title:"Alert" , message: titleArray[index], delegate: self, cancelButtonTitle: "OK")
-        alert.show()
+//        let alert = UIAlertView.init(title:"Alert" , message: titleArray[index], delegate: self, cancelButtonTitle: "OK")
+//        alert.show()
+        
+        print("Image Clicked")
     }
     
     func callBackFirstDisplayView(_ imageView: UIImageView, _ url: [String], _ index: Int) {

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="egU-Bw-0i1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App Starts View Controller-->
+        <scene sceneID="hva-6y-Xqa">
+            <objects>
+                <viewController id="egU-Bw-0i1" customClass="AppStartsViewController" customModule="fanatic11" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uB0-HS-5rr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fanatic 11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dd5-gH-YVg">
+                                <rect key="frame" x="16" y="232" width="343" height="92"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.99359533629999996" green="0.99359533629999996" blue="0.99359533629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dd5-gH-YVg" firstAttribute="top" secondItem="Cgm-2c-ILA" secondAttribute="top" constant="212" id="2oT-Iv-pIt"/>
+                            <constraint firstItem="Dd5-gH-YVg" firstAttribute="trailing" secondItem="uB0-HS-5rr" secondAttribute="trailingMargin" id="bN3-1Y-Nkg"/>
+                            <constraint firstItem="Dd5-gH-YVg" firstAttribute="leading" secondItem="uB0-HS-5rr" secondAttribute="leadingMargin" id="zpu-cU-360"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cgm-2c-ILA"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="Dd5-gH-YVg" id="0ET-gY-iUC"/>
+                        <segue destination="ZOD-qw-74X" kind="show" identifier="toNoWifi" id="cDl-yo-53c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dv4-q4-X8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.800000000000001" y="154.27286356821591"/>
+        </scene>
+        <!--No Internet View Controller-->
+        <scene sceneID="SFQ-MR-m4h">
+            <objects>
+                <viewController storyboardIdentifier="NoWifi" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZOD-qw-74X" customClass="NoInternetViewController" customModule="fanatic11" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lqd-ZG-wSg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nowifi" translatesAutoresizingMaskIntoConstraints="NO" id="1k4-pY-SHV">
+                                <rect key="frame" x="67" y="207" width="240" height="231"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Connections" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1I-Wm-7Kw">
+                                <rect key="frame" x="106" y="98" width="187" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Vn2-0q-rMc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5k2-aw-vhV">
+                                <rect key="frame" x="157" y="521" width="92" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="usn-I0-ebo"/>
+                                </constraints>
+                                <state key="normal" title="Retry"/>
+                                <connections>
+                                    <action selector="retryButtonPressed:" destination="ZOD-qw-74X" eventType="touchUpInside" id="6S0-In-Nc3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UdH-c8-wwS" firstAttribute="trailing" secondItem="5k2-aw-vhV" secondAttribute="trailing" constant="126" id="H4p-Wy-8l0"/>
+                            <constraint firstItem="1k4-pY-SHV" firstAttribute="top" secondItem="e1I-Wm-7Kw" secondAttribute="bottom" constant="88" id="Ohe-iy-3uT"/>
+                            <constraint firstItem="UdH-c8-wwS" firstAttribute="bottom" secondItem="5k2-aw-vhV" secondAttribute="bottom" constant="116" id="TYg-V3-ynQ"/>
+                            <constraint firstItem="5k2-aw-vhV" firstAttribute="top" secondItem="1k4-pY-SHV" secondAttribute="bottom" constant="83" id="VmL-PT-q1e"/>
+                            <constraint firstItem="e1I-Wm-7Kw" firstAttribute="top" secondItem="UdH-c8-wwS" secondAttribute="top" constant="78" id="b9A-sz-hcI"/>
+                            <constraint firstItem="1k4-pY-SHV" firstAttribute="centerX" secondItem="lqd-ZG-wSg" secondAttribute="centerX" id="gOQ-SQ-LQz"/>
+                            <constraint firstItem="5k2-aw-vhV" firstAttribute="leading" secondItem="UdH-c8-wwS" secondAttribute="leading" constant="157" id="idQ-Yb-fqr"/>
+                            <constraint firstItem="1k4-pY-SHV" firstAttribute="leading" secondItem="UdH-c8-wwS" secondAttribute="leading" constant="67" id="ixI-Ox-zhP"/>
+                            <constraint firstItem="e1I-Wm-7Kw" firstAttribute="leading" secondItem="UdH-c8-wwS" secondAttribute="leading" constant="106" id="wad-X9-ge7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UdH-c8-wwS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQY-d8-HCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="152.47376311844079"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nowifi" width="2000" height="1846"/>
+    </resources>
+</document>
