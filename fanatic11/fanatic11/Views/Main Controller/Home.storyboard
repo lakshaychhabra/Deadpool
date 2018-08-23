@@ -68,6 +68,7 @@
                             <color key="tintColor" red="0.99359533629999996" green="0.99359533629999996" blue="0.99359533629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="notificationClicked:" destination="9pv-A4-QxB" id="pRl-Si-a7R"/>
+                                <segue destination="T8a-hd-80o" kind="show" id="iPf-IQ-ytT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -80,6 +81,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1840.8" y="-482.60869565217394"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="pAS-hl-OdR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notifications" id="T8a-hd-80o" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TqR-Uc-QzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2400" y="-483"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cwi-Vk-Czo">
