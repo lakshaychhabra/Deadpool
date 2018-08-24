@@ -15,8 +15,9 @@ class Home: UIViewController {
     @IBOutlet var imageSlider: AACarousel!
     @IBOutlet var notificationIcon: UIBarButtonItem!
     @IBOutlet var tableView: UITableView!
-    
     @IBOutlet var segmentControl: UISegmentedControl!
+    
+    
     var changedValue : Int = 0
     var pathArray = [String]()
     var titleArray = [String]()
@@ -27,13 +28,14 @@ class Home: UIViewController {
         navigationItem.backBarButtonItem?.tintColor = UIColor.white
         imageSlider.delegate = self
         setupImageSlider()
+        registerCellNib(named: "Matches", with: tableView)
         
     }
     //Setting up Crousel
     
     func setupImageSlider(){
         
-        pathArray = ["https://media.licdn.com/dms/image/C4D03AQGwzM_QAS-inA/profile-displayphoto-shrink_200_200/0?e=1538611200&v=beta&t=PhoHU2GTpQ8HCs6ayDXCvbm9L98wLA1SdZXtp68hxQU", "https://qph.fs.quoracdn.net/main-thumb-104917081-200-doqbdioevfpljkwmrogaywtxzfykftjw.jpeg"]
+        pathArray = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS3KlqcKJAttSXSmrPBgqCUKKKAcO75ysL8Fo1dgQVDwsoUmQL", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvCeHSIZhX7Xys9abwxl_3eYHeO23LjPKPmwTNAVqhL_P7x24Uag"]
         titleArray = [" ", " "]
         imageSlider.setCarouselData(paths: pathArray, describedTitle: titleArray, isAutoScroll: true, timer: 3.0, defaultImage: "defaultImage")
         //optional methods
@@ -60,9 +62,6 @@ class Home: UIViewController {
         
     }
     
-    @IBAction func notificationClicked(_ sender: Any) {
-        
-    }
 }
 
 
@@ -82,25 +81,33 @@ extension Home : UITableViewDelegate, UITableViewDataSource{
         }
         
     }
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Matches") as! Matches
         
         if changedValue == 0 {
-            cell?.textLabel?.text = "Lakshay"
-            return cell!
+            
+    
+            return cell
         }
         else if changedValue == 1 {
-            cell?.textLabel?.text = "Lakshay"
-            return cell!
+          
+            return cell
         }
         else{
-            cell?.textLabel?.text = "Lakshay"
-            return cell!
+          
+            return cell
         }
         
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 116
+    }
+    
     
 }
 
@@ -110,10 +117,9 @@ extension Home : UITableViewDelegate, UITableViewDataSource{
 extension Home : AACarouselDelegate{
     
     func didSelectCarouselView(_ view: AACarousel, _ index: Int) {
-//        let alert = UIAlertView.init(title:"Alert" , message: titleArray[index], delegate: self, cancelButtonTitle: "OK")
-//        alert.show()
         
         print("Image Clicked")
+        
     }
     
     func callBackFirstDisplayView(_ imageView: UIImageView, _ url: [String], _ index: Int) {
@@ -129,4 +135,6 @@ extension Home : AACarouselDelegate{
     }
  
 }
+
+
 

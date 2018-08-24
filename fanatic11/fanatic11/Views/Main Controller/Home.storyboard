@@ -18,15 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Dh-4B-ffc">
-                                <rect key="frame" x="0.0" y="263" width="375" height="355"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Dh-4B-ffc">
+                                <rect key="frame" x="0.0" y="281" width="375" height="337"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="337" id="QYY-VC-ZMm"/>
+                                </constraints>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="rFV-Ik-AGL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="6"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="U1u-Rf-qUR">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="48" id="U1u-Rf-qUR">
+                                        <rect key="frame" x="0.0" y="34" width="375" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U1u-Rf-qUR" id="Nf5-OR-Ctg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -37,11 +46,11 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-1v-8OR" customClass="AACarousel" customModule="AACarousel">
-                                <rect key="frame" x="0.0" y="64" width="375" height="171"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="190"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cSb-GY-Jb5">
-                                <rect key="frame" x="0.0" y="234" width="375" height="29"/>
+                                <rect key="frame" x="0.0" y="255" width="375" height="29"/>
                                 <color key="backgroundColor" red="0.99359533629999996" green="0.99359533629999996" blue="0.99359533629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="Contests"/>
@@ -56,17 +65,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0Dh-4B-ffc" firstAttribute="top" secondItem="iQA-1v-8OR" secondAttribute="bottom" constant="28" id="47A-gB-beU"/>
-                            <constraint firstItem="iQA-1v-8OR" firstAttribute="trailing" secondItem="cSb-GY-Jb5" secondAttribute="trailing" id="85T-SS-qA8"/>
-                            <constraint firstItem="cSb-GY-Jb5" firstAttribute="leading" secondItem="0Dh-4B-ffc" secondAttribute="leading" id="8Oc-Bv-J2I"/>
-                            <constraint firstItem="iQA-1v-8OR" firstAttribute="leading" secondItem="cSb-GY-Jb5" secondAttribute="leading" id="LzR-3w-4bn"/>
-                            <constraint firstAttribute="trailing" secondItem="iQA-1v-8OR" secondAttribute="trailing" id="MeZ-aC-qA5"/>
-                            <constraint firstItem="iQA-1v-8OR" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="XYL-xa-zip"/>
-                            <constraint firstItem="iQA-1v-8OR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="i2P-yB-hL2"/>
-                            <constraint firstItem="cSb-GY-Jb5" firstAttribute="trailing" secondItem="0Dh-4B-ffc" secondAttribute="trailing" id="jji-1F-6iT"/>
-                            <constraint firstItem="0Dh-4B-ffc" firstAttribute="top" secondItem="cSb-GY-Jb5" secondAttribute="bottom" constant="1" id="m3t-DR-9v7"/>
-                            <constraint firstItem="cSb-GY-Jb5" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="170" id="tNv-ei-Pvc"/>
-                            <constraint firstItem="0Dh-4B-ffc" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="xTH-Ws-iTd"/>
+                            <constraint firstItem="cSb-GY-Jb5" firstAttribute="trailing" secondItem="0Dh-4B-ffc" secondAttribute="trailing" id="5u3-NU-GOF"/>
+                            <constraint firstAttribute="trailing" secondItem="iQA-1v-8OR" secondAttribute="trailing" id="Lyt-0e-OXk"/>
+                            <constraint firstItem="0Dh-4B-ffc" firstAttribute="top" secondItem="cSb-GY-Jb5" secondAttribute="bottom" constant="-2" id="Mhz-WA-R4O"/>
+                            <constraint firstItem="cSb-GY-Jb5" firstAttribute="top" secondItem="iQA-1v-8OR" secondAttribute="bottom" constant="1" id="UIg-u5-fSv"/>
+                            <constraint firstItem="iQA-1v-8OR" firstAttribute="leading" secondItem="cSb-GY-Jb5" secondAttribute="leading" id="Vgz-s8-sJM"/>
+                            <constraint firstItem="iQA-1v-8OR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="W1E-sn-K4N"/>
+                            <constraint firstItem="iQA-1v-8OR" firstAttribute="trailing" secondItem="cSb-GY-Jb5" secondAttribute="trailing" id="bx6-Jq-iST"/>
+                            <constraint firstItem="cSb-GY-Jb5" firstAttribute="leading" secondItem="0Dh-4B-ffc" secondAttribute="leading" id="dMJ-nv-gxW"/>
+                            <constraint firstItem="0Dh-4B-ffc" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="fU0-Ou-FmB"/>
+                            <constraint firstItem="iQA-1v-8OR" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="ln4-7L-ecf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -75,7 +83,6 @@
                         <barButtonItem key="rightBarButtonItem" image="icons8-bell-filled-30" id="Pwm-ph-7HK">
                             <color key="tintColor" red="0.99359533629999996" green="0.99359533629999996" blue="0.99359533629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="notificationClicked:" destination="9pv-A4-QxB" id="pRl-Si-a7R"/>
                                 <segue destination="T8a-hd-80o" kind="show" id="iPf-IQ-ytT"/>
                             </connections>
                         </barButtonItem>

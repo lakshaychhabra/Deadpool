@@ -22,6 +22,13 @@ class SelectMenuViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "logout"{
+            navigationController?.setNavigationBarHidden(true, animated: true)
+            tabBarController?.tabBar.isHidden = true
+        }
+    }
 
     
 }
@@ -35,7 +42,7 @@ extension SelectMenuViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCells") as! MenuCells
         if indexPath.row == 0 {
-            cell.labelText.text = "Logout"
+            cell.labelText.text = "Help Desk"
             return cell
         }
         else if indexPath.row == 1 {
@@ -59,14 +66,21 @@ extension SelectMenuViewController : UITableViewDelegate, UITableViewDataSource{
             return cell
         }
         else{
-            cell.labelText.text = "Help Desk"
+            cell.labelText.text = "Logout"
             return cell
         }
         
     }
     
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        displayAlert(title: "Coming Soon", message: "Hold Tight")
+        
+        if indexPath.row == 6 {
+            performSegue(withIdentifier: "logout", sender: nil)
+        }
+        else{
+            displayAlert(title: "Coming Soon", message: "Hold Tight")
+        }
     }
     
 }

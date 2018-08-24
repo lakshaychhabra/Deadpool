@@ -51,11 +51,20 @@
                     <navigationItem key="navigationItem" title="Menu" id="ieD-wC-fLl"/>
                     <connections>
                         <outlet property="tableView" destination="6C1-XB-lYs" id="5Ex-YT-k5I"/>
+                        <segue destination="KjD-jg-eyA" kind="show" identifier="logout" id="9u8-lL-eoB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zih-Ze-thu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2824.8000000000002" y="286.50674662668666"/>
+        </scene>
+        <!--LoginScreens-->
+        <scene sceneID="6Hk-at-qfs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoginScreens" id="KjD-jg-eyA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lE2-8s-Vib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3642" y="131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OrR-Cs-chf">
