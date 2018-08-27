@@ -30,6 +30,11 @@
 		3A60B41F212E78000002CCF7 /* NoInternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A60B41E212E78000002CCF7 /* NoInternetViewController.swift */; };
 		3A99141B212FEB6400D07837 /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A991419212FEB6400D07837 /* Matches.swift */; };
 		3A99141C212FEB6400D07837 /* Matches.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A99141A212FEB6400D07837 /* Matches.xib */; };
+		3AB400002133D870009C8CD4 /* DatePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB4FFFF2133D870009C8CD4 /* DatePopUpViewController.swift */; };
+		3AB4FFD92133C9E6009C8CD4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB4FFD82133C9E6009C8CD4 /* Constants.swift */; };
+		3AB4FFFA2133CCF6009C8CD4 /* ProfilHeadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB4FFF82133CCF6009C8CD4 /* ProfilHeadTableViewCell.swift */; };
+		3AB4FFFB2133CCF6009C8CD4 /* ProfilHeadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB4FFF92133CCF6009C8CD4 /* ProfilHeadTableViewCell.xib */; };
+		3AB4FFFE2133D863009C8CD4 /* DatePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB4FFFD2133D863009C8CD4 /* DatePopUp.storyboard */; };
 		3AE28A65212E6B56006542DA /* NetworkManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE28A64212E6B56006542DA /* NetworkManagement.swift */; };
 		3AE28A69212E6CE0006542DA /* AppStarts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE28A68212E6CE0006542DA /* AppStarts.storyboard */; };
 		3AE28A6B212E6D67006542DA /* AppStartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE28A6A212E6D67006542DA /* AppStartsViewController.swift */; };
@@ -64,6 +69,11 @@
 		3A60B41E212E78000002CCF7 /* NoInternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetViewController.swift; sourceTree = "<group>"; };
 		3A991419212FEB6400D07837 /* Matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matches.swift; sourceTree = "<group>"; };
 		3A99141A212FEB6400D07837 /* Matches.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Matches.xib; sourceTree = "<group>"; };
+		3AB4FFD82133C9E6009C8CD4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3AB4FFF82133CCF6009C8CD4 /* ProfilHeadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilHeadTableViewCell.swift; sourceTree = "<group>"; };
+		3AB4FFF92133CCF6009C8CD4 /* ProfilHeadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilHeadTableViewCell.xib; sourceTree = "<group>"; };
+		3AB4FFFD2133D863009C8CD4 /* DatePopUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DatePopUp.storyboard; sourceTree = "<group>"; };
+		3AB4FFFF2133D870009C8CD4 /* DatePopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePopUpViewController.swift; sourceTree = "<group>"; };
 		3AE28A64212E6B56006542DA /* NetworkManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagement.swift; sourceTree = "<group>"; };
 		3AE28A68212E6CE0006542DA /* AppStarts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppStarts.storyboard; sourceTree = "<group>"; };
 		3AE28A6A212E6D67006542DA /* AppStartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStartsViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +107,7 @@
 		3A20D99C212F0993004F2AAF /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				3AB4FFFC2133CCFD009C8CD4 /* Profile */,
 				3A99141D212FEB6A00D07837 /* Matches */,
 				3A991418212FEB3D00D07837 /* Menu Cells */,
 			);
@@ -117,6 +128,7 @@
 			children = (
 				3A216F43212A9E9D007C059E /* Main Controller */,
 				3A216F42212A9E96007C059E /* Login */,
+				3AB400022133D8A0009C8CD4 /* Supportive Views */,
 				3A20D99C212F0993004F2AAF /* CustomCells */,
 			);
 			path = Views;
@@ -168,9 +180,7 @@
 				3A31DA71212A8BF7005E6040 /* DesignableX */,
 				3AE28A6E212E753D006542DA /* Extensions */,
 				3A31DA6E212A8BC3005E6040 /* System */,
-				3A20D991212EF71B004F2AAF /* Main Controller */,
-				3A60B420212E78090002CCF7 /* StartUp Screens */,
-				3A216F40212A9E4B007C059E /* Login Files */,
+				3AFDA07121330ABD00534DB7 /* Controllers */,
 				3A216F41212A9E88007C059E /* Views */,
 				3A31DA63212A8B7D005E6040 /* Assets.xcassets */,
 				3A31DA65212A8B7D005E6040 /* LaunchScreen.storyboard */,
@@ -215,11 +225,48 @@
 			path = Matches;
 			sourceTree = "<group>";
 		};
+		3AB400012133D881009C8CD4 /* Supoortive Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AB4FFFF2133D870009C8CD4 /* DatePopUpViewController.swift */,
+			);
+			path = "Supoortive Files";
+			sourceTree = "<group>";
+		};
+		3AB400022133D8A0009C8CD4 /* Supportive Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AB4FFFD2133D863009C8CD4 /* DatePopUp.storyboard */,
+			);
+			path = "Supportive Views";
+			sourceTree = "<group>";
+		};
+		3AB4FFFC2133CCFD009C8CD4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3AB4FFF82133CCF6009C8CD4 /* ProfilHeadTableViewCell.swift */,
+				3AB4FFF92133CCF6009C8CD4 /* ProfilHeadTableViewCell.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		3AE28A6E212E753D006542DA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3AB4FFD82133C9E6009C8CD4 /* Constants.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3AFDA07121330ABD00534DB7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A20D991212EF71B004F2AAF /* Main Controller */,
+				3A60B420212E78090002CCF7 /* StartUp Screens */,
+				3A216F40212A9E4B007C059E /* Login Files */,
+				3AB400012133D881009C8CD4 /* Supoortive Files */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		3F3897EA92C872B063379317 /* Pods */ = {
@@ -309,7 +356,9 @@
 				3A20D990212EF66F004F2AAF /* Notifications.storyboard in Resources */,
 				3A31DA70212A8BE2005E6040 /* LoginScreens.storyboard in Resources */,
 				3AE28A69212E6CE0006542DA /* AppStarts.storyboard in Resources */,
+				3AB4FFFE2133D863009C8CD4 /* DatePopUp.storyboard in Resources */,
 				3A3DF8FA212DC77C00850A42 /* MyAccount.storyboard in Resources */,
+				3AB4FFFB2133CCF6009C8CD4 /* ProfilHeadTableViewCell.xib in Resources */,
 				3A20D99B212F0989004F2AAF /* MenuCells.xib in Resources */,
 				3A31DA62212A8B7B005E6040 /* Main.storyboard in Resources */,
 			);
@@ -386,8 +435,11 @@
 				3A20D99A212F0989004F2AAF /* MenuCells.swift in Sources */,
 				3A20D995212F01BA004F2AAF /* MyContestViewController.swift in Sources */,
 				3A20D993212EF73B004F2AAF /* NotificationViewController.swift in Sources */,
+				3AB400002133D870009C8CD4 /* DatePopUpViewController.swift in Sources */,
+				3AB4FFFA2133CCF6009C8CD4 /* ProfilHeadTableViewCell.swift in Sources */,
 				3AE28A6B212E6D67006542DA /* AppStartsViewController.swift in Sources */,
 				3A99141B212FEB6400D07837 /* Matches.swift in Sources */,
+				3AB4FFD92133C9E6009C8CD4 /* Constants.swift in Sources */,
 				3A60B41F212E78000002CCF7 /* NoInternetViewController.swift in Sources */,
 				3A3DF8FC212DCA7900850A42 /* MyAccount.swift in Sources */,
 			);
@@ -544,7 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.appgroceries.fanatic11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -563,7 +615,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.appgroceries.fanatic11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

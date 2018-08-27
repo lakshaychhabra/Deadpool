@@ -19,20 +19,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Dh-4B-ffc">
-                                <rect key="frame" x="0.0" y="281" width="375" height="337"/>
+                                <rect key="frame" x="0.0" y="269" width="375" height="349"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="337" id="QYY-VC-ZMm"/>
+                                    <constraint firstAttribute="height" constant="349" id="WQt-BQ-MTO"/>
                                 </constraints>
                                 <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="rFV-Ik-AGL">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="6"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="16"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="48" id="U1u-Rf-qUR">
-                                        <rect key="frame" x="0.0" y="34" width="375" height="48"/>
+                                        <rect key="frame" x="0.0" y="44" width="375" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U1u-Rf-qUR" id="Nf5-OR-Ctg">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
@@ -46,11 +46,11 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-1v-8OR" customClass="AACarousel" customModule="AACarousel">
-                                <rect key="frame" x="0.0" y="64" width="375" height="190"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="176"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cSb-GY-Jb5">
-                                <rect key="frame" x="0.0" y="255" width="375" height="29"/>
+                                <rect key="frame" x="0.0" y="240" width="375" height="29"/>
                                 <color key="backgroundColor" red="0.99359533629999996" green="0.99359533629999996" blue="0.99359533629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="Contests"/>
@@ -63,18 +63,18 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cSb-GY-Jb5" firstAttribute="trailing" secondItem="0Dh-4B-ffc" secondAttribute="trailing" id="5u3-NU-GOF"/>
-                            <constraint firstAttribute="trailing" secondItem="iQA-1v-8OR" secondAttribute="trailing" id="Lyt-0e-OXk"/>
-                            <constraint firstItem="0Dh-4B-ffc" firstAttribute="top" secondItem="cSb-GY-Jb5" secondAttribute="bottom" constant="-2" id="Mhz-WA-R4O"/>
-                            <constraint firstItem="cSb-GY-Jb5" firstAttribute="top" secondItem="iQA-1v-8OR" secondAttribute="bottom" constant="1" id="UIg-u5-fSv"/>
-                            <constraint firstItem="iQA-1v-8OR" firstAttribute="leading" secondItem="cSb-GY-Jb5" secondAttribute="leading" id="Vgz-s8-sJM"/>
-                            <constraint firstItem="iQA-1v-8OR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="W1E-sn-K4N"/>
-                            <constraint firstItem="iQA-1v-8OR" firstAttribute="trailing" secondItem="cSb-GY-Jb5" secondAttribute="trailing" id="bx6-Jq-iST"/>
-                            <constraint firstItem="cSb-GY-Jb5" firstAttribute="leading" secondItem="0Dh-4B-ffc" secondAttribute="leading" id="dMJ-nv-gxW"/>
-                            <constraint firstItem="0Dh-4B-ffc" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="fU0-Ou-FmB"/>
-                            <constraint firstItem="iQA-1v-8OR" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="ln4-7L-ecf"/>
+                            <constraint firstItem="0Dh-4B-ffc" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="1lQ-HZ-VkR"/>
+                            <constraint firstAttribute="trailing" secondItem="iQA-1v-8OR" secondAttribute="trailing" id="4A4-ie-dbw"/>
+                            <constraint firstItem="iQA-1v-8OR" firstAttribute="trailing" secondItem="cSb-GY-Jb5" secondAttribute="trailing" id="7ya-17-bJc"/>
+                            <constraint firstItem="iQA-1v-8OR" firstAttribute="leading" secondItem="cSb-GY-Jb5" secondAttribute="leading" id="CIJ-hX-t2Q"/>
+                            <constraint firstItem="iQA-1v-8OR" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="KR5-vp-YF1"/>
+                            <constraint firstItem="cSb-GY-Jb5" firstAttribute="trailing" secondItem="0Dh-4B-ffc" secondAttribute="trailing" id="QRv-vM-Jg7"/>
+                            <constraint firstItem="iQA-1v-8OR" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="UUE-93-q1K"/>
+                            <constraint firstItem="0Dh-4B-ffc" firstAttribute="top" secondItem="cSb-GY-Jb5" secondAttribute="bottom" constant="1" id="ZfT-No-YYh"/>
+                            <constraint firstItem="cSb-GY-Jb5" firstAttribute="top" secondItem="iQA-1v-8OR" secondAttribute="bottom" id="aDd-pk-Dmk"/>
+                            <constraint firstItem="cSb-GY-Jb5" firstAttribute="leading" secondItem="0Dh-4B-ffc" secondAttribute="leading" id="phO-5D-qxb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -110,7 +110,9 @@
         <scene sceneID="cwi-Vk-Czo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dyM-jj-k55" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icons8-home-filled-30 (1)" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-home-filled-30 (1)" id="acW-dT-cKf">
+                        <inset key="imageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="qvG-uk-ygp">

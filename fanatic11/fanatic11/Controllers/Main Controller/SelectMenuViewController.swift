@@ -16,12 +16,7 @@ class SelectMenuViewController: UIViewController {
         registerCellNib(named: "MenuCells", with: tableView)
         
     }
-    func displayAlert(title: String, message: String) {
-        
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "logout"{

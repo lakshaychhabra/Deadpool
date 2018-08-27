@@ -36,6 +36,12 @@ extension UIViewController{
         let cellNib = UINib(nibName: name, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: name)
     }
+    func displayAlert(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     
     func showLoginScreens() -> Void {
         let storyBoard: UIStoryboard = UIStoryboard(name: "LoginScreens", bundle: nil)
@@ -60,6 +66,15 @@ extension UIViewController{
             self.present(newViewController, animated: true, completion: nil)
         }
     }
+    
+    func activityIndicatorFunc() {
+        let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 150, height: 150))
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        view.addSubview(activityIndicator)
+    }
+
     
     
 }

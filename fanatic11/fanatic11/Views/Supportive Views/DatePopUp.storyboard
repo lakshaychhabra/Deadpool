@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZR4-7f-L9H">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Pop Up View Controller-->
+        <scene sceneID="h52-dr-Eah">
+            <objects>
+                <viewController id="ZR4-7f-L9H" customClass="DatePopUpViewController" customModule="fanatic11" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tdE-8a-dEK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cP-HW-lDR">
+                                <rect key="frame" x="16" y="181" width="288" height="206"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoY-W5-lGG">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="29"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="s37-pf-LUI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nb4-Jx-ugT">
+                                        <rect key="frame" x="8" y="37" width="266" height="126"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="552814897.81035101">
+                                            <!--2018-07-09 07:41:37 +0000-->
+                                        </date>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-1609419600">
+                                            <!--1950-01-01 11:00:00 +0000-->
+                                        </date>
+                                        <date key="maximumDate" timeIntervalSinceReferenceDate="-46800">
+                                            <!--2000-12-31 11:00:00 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBa-4j-07L">
+                                        <rect key="frame" x="79" y="168" width="130" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="llg-t0-SZc"/>
+                                        </constraints>
+                                        <state key="normal" title="Save Date">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="ZR4-7f-L9H" eventType="touchUpInside" id="fvW-BR-n5p"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Nb4-Jx-ugT" firstAttribute="leading" secondItem="9cP-HW-lDR" secondAttribute="leadingMargin" id="2Uv-Wy-ehX"/>
+                                    <constraint firstItem="OoY-W5-lGG" firstAttribute="top" secondItem="9cP-HW-lDR" secondAttribute="top" id="4Go-kH-uPH"/>
+                                    <constraint firstAttribute="trailing" secondItem="OoY-W5-lGG" secondAttribute="trailing" id="9cn-eY-Tdq"/>
+                                    <constraint firstItem="OoY-W5-lGG" firstAttribute="centerX" secondItem="XBa-4j-07L" secondAttribute="centerX" id="Be2-md-ywW"/>
+                                    <constraint firstItem="XBa-4j-07L" firstAttribute="top" secondItem="Nb4-Jx-ugT" secondAttribute="bottom" constant="5" id="KeG-5c-1Ze"/>
+                                    <constraint firstItem="XBa-4j-07L" firstAttribute="leading" secondItem="9cP-HW-lDR" secondAttribute="leading" constant="79" id="L3B-5u-uGR"/>
+                                    <constraint firstItem="OoY-W5-lGG" firstAttribute="leading" secondItem="9cP-HW-lDR" secondAttribute="leading" id="Rsj-0x-L9a"/>
+                                    <constraint firstItem="XBa-4j-07L" firstAttribute="bottom" secondItem="9cP-HW-lDR" secondAttribute="bottomMargin" id="ciR-bc-oxA"/>
+                                    <constraint firstItem="Nb4-Jx-ugT" firstAttribute="top" secondItem="OoY-W5-lGG" secondAttribute="bottom" constant="8" symbolic="YES" id="mB7-bf-XZ3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nb4-Jx-ugT" secondAttribute="trailing" constant="14" id="rXt-ya-oqe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54352395304568524" green="0.54352395304568524" blue="0.54352395304568524" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9cP-HW-lDR" firstAttribute="centerY" secondItem="tdE-8a-dEK" secondAttribute="centerY" id="H7H-Kw-dVh"/>
+                            <constraint firstItem="9cP-HW-lDR" firstAttribute="leading" secondItem="tdE-8a-dEK" secondAttribute="leadingMargin" id="HWV-dh-kCa"/>
+                            <constraint firstItem="9cP-HW-lDR" firstAttribute="top" secondItem="3ld-SL-mEp" secondAttribute="top" constant="161" id="LNM-bg-JQW"/>
+                            <constraint firstItem="9cP-HW-lDR" firstAttribute="trailing" secondItem="tdE-8a-dEK" secondAttribute="trailingMargin" id="fdp-q6-7WV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3ld-SL-mEp"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Nb4-Jx-ugT" id="NsH-SW-WFZ"/>
+                        <outlet property="saveButton" destination="XBa-4j-07L" id="Xgz-5a-0N4"/>
+                        <outlet property="selectDate" destination="OoY-W5-lGG" id="K0L-8x-Lki"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOE-SW-uhj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3740.625" y="117.25352112676056"/>
+        </scene>
+    </scenes>
+</document>
