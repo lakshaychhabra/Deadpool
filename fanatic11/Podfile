@@ -13,7 +13,6 @@ target 'fanatic11' do
     pod 'AACarousel'
     pod 'Kingfisher'
     pod 'ReachabilitySwift'
-    pod 'TwicketSegmentedControl'
-    pod 'SnapKit'
+    pod 'Toast-Swift'
 
 end

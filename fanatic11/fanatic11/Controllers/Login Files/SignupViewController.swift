@@ -10,6 +10,7 @@ import UIKit
 import DTTextField
 import Alamofire
 import SwiftyJSON
+import Toast_Swift
 
 class SignupViewController: UIViewController {
 
@@ -26,6 +27,7 @@ class SignupViewController: UIViewController {
     @IBOutlet var confirmPassword: DTTextField!
    
     var params = [String : String]()
+    
       let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 150, height: 150))
     
     override func viewDidLoad() {
@@ -60,38 +62,77 @@ class SignupViewController: UIViewController {
         
         if name.text == "" || phoneNumber.text == "" || email.text == "" || password.text == "" || confirmPassword.text == "" || dobLabel.text == "" {
             
-            displayAlert(title: "Empty Fields", message: "Please Fill All the Fields")
-            
+            //displayAlert(title: "Empty Fields", message: "Please Fill All the Fields")
+            self.view.makeToast("Please Enter All The Fields", duration: 1.0, position: .center)
         }
         else if password.text != confirmPassword.text {
             
-                displayAlert(title: "Password Doesnot Match", message: "Please use same password in both text fields")
-            
+                //displayAlert(title: "Password Doesnot Match", message: "Please use same password in both text fields")
+            self.view.makeToast("Password Doesnot Match", duration: 1.0, position: .center)
         }
         else if phoneNumber.text?.count != 10 {
-            displayAlert(title: "Wrong Phone Number", message: "Doesnot match to Indian Custom")
+           // displayAlert(title: "Wrong Phone Number", message: "Doesnot match to Indian Custom")
+            self.view.makeToast("Incorrect Phone Number", duration: 1.0, position: .center)
         }
         else if !switchTerms.isOn {
             
-            displayAlert(title: "Accept Terms And Condition", message: "Please Accept Terms and condtions")
+           // displayAlert(title: "Accept Terms And Condition", message: "Please Accept Terms and condtions")
+            self.view.makeToast("Please Accept Terms and condtions", duration: 1.0, position: .center)
             
+        }
+        else if password.text != confirmPassword.text {
+          //  displayAlert(title: "Password Doesnot Match", message: "Please use same password in both text fields")
+            self.view.makeToast("Please use same password in both text fields", duration: 1.0, position: .center)
         }
             
         else{
             
             registerButton.isEnabled = true
             
-            if password.text != confirmPassword.text {
-                displayAlert(title: "Password Doesnot Match", message: "Please use same password in both text fields")
-            }
-        
             
+            
+            params = ["fullname" : name.text!, "email" : email.text!, "password" : password.text!, "dob" : dobLabel.text!, "phone" : phoneNumber.text!]
+                
+                activityIndicatorFunc()
+                activityIndicator.startAnimating()
+                UIApplication.shared.beginIgnoringInteractionEvents()
+                
+                Alamofire.request(Constants.signup, method: .post, parameters: params, encoding: URLEncoding.httpBody).responseJSON { (response) in
+                    
+                    
+                    if let response = response.result.value {
+                        print(response)
+                        let data : JSON = JSON(response)
+                        if data["success"] == true {
+                           // self.performSegue(withIdentifier: "toMain", sender: nil)
+                            print("Success")
+                        }
+                        else{
+                            //let data : JSON = JSON(response)
+                            
+                            
+                           // self.displayAlert(title: "Something Went Wrong", message: "One of the field you entered is incorrect.")
+                             self.view.makeToast(data["err"].rawString(), duration: 1.0, position: .center)
+                        }
+                        
+                    }
+                    self.activityIndicator.stopAnimating()
+                    UIApplication.shared.endIgnoringInteractionEvents()
+            }
             
         }
         
     }
     @IBAction func dobButtonPressed(_ sender: Any) {
         
+    }
+    
+    func activityIndicatorFunc() {
+        
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        view.addSubview(activityIndicator)
     }
     
  
