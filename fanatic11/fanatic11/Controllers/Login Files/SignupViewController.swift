@@ -112,7 +112,7 @@ class SignupViewController: UIViewController {
                             
                             
                            // self.displayAlert(title: "Something Went Wrong", message: "One of the field you entered is incorrect.")
-                             self.view.makeToast(data["err"].rawString(), duration: 1.0, position: .center)
+                             self.view.makeToast(data["err"][0].rawString(), duration: 1.0, position: .center)
                         }
                         
                     }

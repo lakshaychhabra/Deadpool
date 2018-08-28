@@ -15,6 +15,7 @@ class MyAccount: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCellNib(named: "ProfilHeadTableViewCell", with: tableView)
+        registerCellNib(named: "MenuCells", with: tableView)
     }
 
 }
@@ -23,7 +24,7 @@ class MyAccount: UIViewController {
 extension MyAccount : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -36,9 +37,19 @@ extension MyAccount : UITableViewDelegate, UITableViewDataSource{
             return cell
         }
         else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-            cell?.textLabel?.text = "Lakshay"
-            return cell!
+             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCells") as! MenuCells
+            if indexPath.row == 0 {
+                cell.labelText.text = "My Account"
+                return cell
+            }
+            else if indexPath.row == 1 {
+                cell.labelText.text = "Profile Information"
+                return cell
+            }
+            else {
+                cell.labelText.text = "Refer Friend"
+                return cell
+            }
         }
       
     }

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +21,27 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6C1-XB-lYs">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="backgroundViews"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="jCr-F9-Ngi">
+                                    <rect key="frame" x="0.0" y="72" width="375" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aH-Un-FVP">
+                                            <rect key="frame" x="142" y="3" width="90" height="19.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="90" id="oUb-WD-apb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="backgroundViews"/>
+                                    <constraints>
+                                        <constraint firstItem="0aH-Un-FVP" firstAttribute="centerX" secondItem="jCr-F9-Ngi" secondAttribute="centerX" id="UCc-fx-eXt"/>
+                                        <constraint firstItem="0aH-Un-FVP" firstAttribute="centerY" secondItem="jCr-F9-Ngi" secondAttribute="centerY" constant="1" id="zmd-fY-2qA"/>
+                                    </constraints>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="8X3-Pn-B3Z">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -93,5 +114,8 @@
     </scenes>
     <resources>
         <image name="icons8-menu-filled-30" width="30" height="30"/>
+        <namedColor name="backgroundViews">
+            <color red="0.8410000205039978" green="0.85000002384185791" blue="0.85000002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

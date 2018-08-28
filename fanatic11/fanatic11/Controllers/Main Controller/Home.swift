@@ -28,6 +28,7 @@ class Home: UIViewController {
         navigationItem.backBarButtonItem?.tintColor = UIColor.white
         imageSlider.delegate = self
         setupImageSlider()
+        
         registerCellNib(named: "Matches", with: tableView)
         
     }
@@ -105,7 +106,7 @@ extension Home : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 116
+        return 140
     }
     
     

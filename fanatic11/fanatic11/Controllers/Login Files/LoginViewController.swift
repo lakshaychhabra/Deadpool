@@ -26,16 +26,14 @@ class LoginViewController: UIViewController {
         password.isSecureTextEntry = true
         loginButton.layer.cornerRadius = 10
         
-        username.text = "l@gmail.com"
-        password.text = "lll"
+        username.text = "lakshay.chhabra@hotmail.com"
+        password.text = "aaa"
         
     }
 
     @IBAction func loginButtonPressed(_ sender: Any) {
         
         login()
-        
-        
         
     }
     

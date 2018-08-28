@@ -19,8 +19,8 @@ class Matches: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-       mainView.backgroundColor = UIColor.green
-        mainView.layer.cornerRadius = 20
+      
+        mainView.layer.cornerRadius = 30
     }
    
 
